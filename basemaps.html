@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidelines for Interpretation in Collect Earth Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c5e1a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c5e1a;
+            margin-top: 2rem;
+        }
+        p {
+            margin: 0.5rem 0;
+        }
+        ul {
+            margin: 1rem 0;
+        }
+        figure {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        figcaption {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guidelines for Labelling Agricultural Fields in the Amazon</h1>
+        <p>Guidelines for Interpretation in Collect Earth Online</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Basemaps</h2>
+            <ul>
+                <li><strong>Bing Maps</strong></li>
+                <li><strong>Google Satellite Imagery </strong></li> 
+                <li><strong>Mapbox Satellite Imagery</strong></li>
+                <li><strong>Planet NICFI Public </strong> June/October 2023/2024</li>
+                <li><strong>Sentinel 2 </strong> June/October 2023/2024</li>
+            </ul>
+            <figure>
+                <img src="figures/Interface3.jpg" alt="CEO agricultural fields">
+                <figcaption>Figure 1: Tree crop plantation using <b>Sentinel 2</b> (left imagery) and <b>Planet NICFI</b> (right imagery).</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>2. Geodash: Understand pixel values for specific dates </h2>
+            <ul>
+                <li><strong>NDFI:</strong>The NDFI it is sensitive to the state of the canopy cover, and has been successfully applied to monitor forest degradation and deforestation in Peru and Brazil. This index comes from the Green Vegetation (GV), non-photosynthetic vegetation (NPV), Soil (S) and the reminder is the shade component.</li>
+                <li><strong>EVI:</strong> The Enhance Vegetation Index it is sensitive to state the health of vegetation in tree crops and oil palm, permanent values in perennial crops let to understand frequency in values.</li>
+                <li><strong>Google Earth Pro</strong> Even this source layer is not accurate set the date the hight quality of image it is an approach to compare surface landcover.</li>
+            </ul>
+            <figure>
+                <img src="figures/Interface4.jpg" alt="Geodash to visualize values of agricultural fields">
+                <figcaption>Figure 2: Geodash to visualize values of agricultural fields. <b>NDFI</b>(Up), <b>EVI</b>(Down), and <b>Google Earth</b> (Right)</figcaption>
+            </figure>
+
+        </section>
+
+        <section>
+            <h2>3. Download Plot to computer</h2>
+            <ul>
+                <p>This option is not recommended, as our goal is to optimize your time during the interpretation. However, if dowload the plot would help you compare it with other datasets available on your computer, it is allowed.</p>                
+                <li><strong>Re-zoom:</strong> Zoom out as initial plot set up</li>
+                <li><strong>Geodash: it is described above but overall it will open extra information for your interpretation, you must click for each plot if you want to open the extra web page</strong>  </li>
+                <li><strong>Download plot to kml:</strong> You can open the plot in your computer using google earth pro or open in QGIS with other datasets</li>
+            </ul>
+            <figure>
+                <img src="figures/interface5.jpg" alt="Visualize plot in computer">
+                <figcaption>Figure 3: External tools outside of CEO.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="figures/OilPalm.jpg" alt="Visualize as kml">
+                <figcaption>Figure 4: Visualize as kml in your computer</figcaption>
+            </figure>
+
+        </section>
+
+        <section>
+            <h2>4. Survey in CEO  </h2>
+            <ul>
+                <li><strong>Tree Crops? </strong> Label as "presence" or "absence." If you are unsure or do not know, it is allowed.</li>
+                <li><strong>Can you guess what type of tree crop? </strong> There are 4 classes. For additional information, refer to the Rules for Interpreting Different Types of Perennial Agriculture. </li>
+                <li><strong>Can you guess what stage of tree crop?</strong> This is more challenging because you'll need to use GeoDash to analyze the pixel data over time. However, this method will help confirm your interpretation </li>
+            </ul>
+            <figure>
+                <img src="figures/interface2.jpg" alt="Example of survey during interpretation.">
+                <figcaption>Figure 5: Example of survey during interpretation.</figcaption>
+            </figure>
+
+        </section>
+
+        <p>Thank your for your interpretation</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Guidelines for Agricultural Labelling</p>
+    </footer>
+</body>
+</html>
