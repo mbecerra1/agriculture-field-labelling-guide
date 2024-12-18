@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuideLines For Labelling Agricultural Fields in Amazon</title>
+    <meta name="description" content="Guidelines for labelling agricultural fields in the Amazon using Collect Earth Online. Learn the rules and techniques for interpreting perennial crops in Para, Brazil, and Ucayali, Peru.">
+    <title>Guidelines for Interpretation in Collect Earth Online</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             color: #333;
         }
-        h1, h2 {
+        header {
+            background-color: #2c5e1a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
             color: #2c5e1a;
+            margin-top: 2rem;
+        }
+        p {
+            margin: 0.5rem 0;
+        }
+        ul {
+            margin: 1rem 0;
         }
         figure {
             text-align: center;
-            margin: 20px 0;
+            margin: 1.5rem 0;
         }
         img {
             max-width: 100%;
-            height: auto;
             border: 1px solid #ccc;
+            border-radius: 4px;
         }
         figcaption {
-            font-size: 0.9em;
+            font-size: 0.9rem;
             color: #555;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #eee;
+        }
+        button {
+            background-color: #2c5e1a;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3c7e2b;
         }
     </style>
 </head>
@@ -34,77 +81,62 @@
         <h1>Guidelines for Labelling Agricultural Fields in the Amazon</h1>
     </header>
 
-    <section>
-        <h2>1. Motivation</h2>
-        <p>Our project seeks to improve the quality of cropland maps, which requires high-quality data to train and validate the models used to create the maps.</p>
+    <main>
+            <section>
+                <h2>1. Motivation</h2>
+                <p>Our project seeks to improve the quality of cropland maps, which requires high-quality data to train and validate the models used to create the maps.</p>
 
-        <p>The Amazon biome has seen marked anthropogenic changes in the last five decades, catalyzed by expanding road networks, human migration, and economic integration with national and international markets. The overarching goal of this project is to support national efforts to monitor agricultural expansion in the Amazon's economic frontier. Specifically, we aim to fill important knowledge gaps in existing land cover data by mapping tree crop plantations that have economic value and substantial biodiversity impacts.  To achieve this, we developed a probabilistic, satellite image-based reference data collection dataset that distinguishes key tree crops (e.g. oil palm, cacao) from other land uses in cultivated regions, and used this to train and assess tree crop mapping models.  
-            </p>
+                <p>The Amazon biome has seen marked anthropogenic changes in the last five decades, catalyzed by expanding road networks, human migration, and economic integration with national and international markets. The overarching goal of this project is to support national efforts to monitor agricultural expansion in the Amazon's economic frontier. Specifically, we aim to fill important knowledge gaps in existing land cover data by mapping tree crop plantations that have economic value and substantial biodiversity impacts. To achieve this, we developed a probabilistic, satellite image-based reference dataset that distinguishes key tree crops (e.g., oil palm, cacao) from other land uses in cultivated regions and used this to train and assess tree crop mapping models.</p>
 
-        <p>The sampled points were loaded into Collect Earth Online (CEO) along with ancillary imagery to aid with data interpretation to create a labelling project. This labelling project was undertaken by 3 separate interpreters, who visually interpreted the land cover type under each point following a key that provided examples of different tree crops and how to interpret their appearance in the imagery. The CEO project was configurated as base imagery the combination of SAR and optical data that highlight structural aspects that can be visually interpreted, time series of Planet imagery, high-resolution satellite base maps, with the GEDI-height data providing an additional aid to interpretation. Interpretation was undertaken by geography students and GIS professionals with different levels of familiarity with the study site.</p>
-    </section>
+                <p>The sampled points were loaded into Collect Earth Online (CEO) along with ancillary imagery to aid with data interpretation and create a labelling project. This project was carried out by three interpreters who visually analyzed the land cover type under each point using a key with examples of various tree crops and their imagery appearances. The CEO project incorporated SAR and optical data, Planet time-series imagery, high-resolution satellite basemaps, and GEDI height data as aids for interpretation. Participants included geography students and GIS professionals with varying familiarity with the study area.</p>
+            </section>
 
-    <section>
-        <h2>2. Objective</h2>
-        <ul>
-            <li><strong>Period of interpretation:</strong> Perennial crops from 2023 - 2024 </li>
-            <li><strong>Target agricultural fields:</strong> Oil Palm and Tree Crops</li>
-            <li><strong>Where:</strong> Para, Brazil and Ucayali, Peru</li>
+            <section>
+                <h2>2. Objective</h2>
+                <ul>
+                    <li><strong>Period of interpretation:</strong> Perennial crops from 2023 - 2024</li>
+                    <li><strong>Target agricultural fields:</strong> Oil Palm and Tree Crops</li>
+                    <li><strong>Where:</strong> Para, Brazil and Ucayali, Peru</li>
+                </ul>
+            </section>
 
-        </ul>
-    </section>
+            <section>
+                <h2>3. The Interpreter Interface: Collect Earth Online</h2>
+                <p>Collect Earth Online is a free, open-source system for viewing and interpreting high-resolution satellite imagery. It enables users to efficiently collect up-to-date information about their environment and observe changes over time.</p>
 
-    <section>
-        <h2>3. The interpreter interface : Collect Earth Online </h2>
-        <p>Collect Earth Online is a free, open-source system for viewing and interpreting high-resolution satellite imagery. It enables users to efficiently collect up-to-date information about their environment and observe changes over time.
-            </p>
+                <p>The institutional page is named <b>SERVIR_Amazonia_LCLUC</b>, and the project is titled <b>Test3TreeCropsValidationPara</b>.</p>
+                <p>The following example highlights an interpreter's task in the "tree crop" class in the state of Para, Brazil, during 2023 - 2024.</p>
+                <figure>
+                    <img src="figures/Interface.jpg" alt="Example of labelled agricultural fields">
+                    <figcaption>Figure 1: CEO Interface interpreter</figcaption>
+                </figure>
 
-        <p>The following is a set up institution page named <b>SERVIR_Amazonia_LCLUC</b>. And then it has been set up a project named <b>Test3TreeCropsValidationPara</b></p>
-            <p>The following example is for interpreter <b>"class= tree crop"</b> in the state of Para in Brazil from 2023 - 2024 </p>
-        <figure>
-            <img src="figures/Interface.jpg" alt="Example of labelled agricultural fields">
-            <figcaption>Figure 1: CEO Interface interpreter</figcaption>
-        </figure>
+                <figure>
+                    <img src="figures/Interface2.jpg" alt="Example of survey during interpretation">
+                    <figcaption>Figure 2: Example of survey during interpretation.</figcaption>
+                </figure>
+            </section>
 
-        <figure>
-            <img src="figures/Interface2.jpg" alt="Example of survey during interpretation">
-            <figcaption>Figure 2: Example of survey during interpretation.</figcaption>
-        </figure>
+            <section>
+                <h2>4. Rules</h2>
+                <p>We have revised and simplified these rules on Dec 12, 2024.</p>
 
-    </section>
+                <p>This manual has been simplified for an interpretation campaign in CEO, focusing on the absence and presence of tree crops. If interpreters select "presence," the survey will display the following questions: <b>Can you guess what type of tree crop?</b> and <b>Can you guess what stage of tree crop?</b> For examples of how to answer these questions, refer to <b>Types of Perennial Agriculture</b>.</p>
+                <ul>
+                    <li><strong>Rules for interpreting imagery:</strong> Examples of different basemaps and resources to interpret classes in CEO.</li>
+                    <button onclick="window.open('basemaps.html', '_blank')">View Basemaps for CEO Interpretation</button>
 
-    <section>
-        <h2>4. Rules</h2>
-        <p>We have revised and simplified these rules on Dec 12, 2024</p>
+                    <li><strong>Rules for interpreting different types of perennial agriculture:</strong> Examples of different perennial classes in Para, Brazil.</li>
+                    <button onclick="window.open('types.html', '_blank')">Types of Perennial Agriculture</button>
 
-        <p>
-            This manual has been simplified to follow an interpretation campaing in CEO. From absence and presence of tree crops. If interpreter select presence, the survey will display the follow questions:
-            <b>Can you guess what type of tree crop?</b> and <b>Can you guess what stage of tree crop?</b> 
-            for further examples of how to answer these questions go to Types of perennial agriculture. 
-        </p>
-        <ul>
-            <li><strong>1.Rules for interpreting imagery</strong> Example of different basemaps and resources able to interpretate those classes in CEO </li>
-                    <button onclick="window.open('basemaps.html', '_blank')">Conduct intepretation in CEO</button>
-            <li><strong>2.Rules for interpretating different types of perennial agriculture</strong> Example of different perennial classes in the State of Para, Brazil</li>
-                    <button onclick="window.open('types.html', '_blank')">Types of perennial agriculture</button>
-            <li>
-                <strong>Select a project to contribute based on your previous knowledge:</strong> Targets are Peru or Brazil, focusing on tree crops and oil palm crops between 2023–2024.
-            </li>
-            <!-- Button to open the correct CEO URL -->
-                    <button onclick="window.open('https://www.collect.earth/', '_blank')">
-                        Go to CEO
-                    </button>
-        </ul>
-
-
-
-
-
-
-    </section>
-
+                    <li><strong>Select a project to contribute based on your previous knowledge:</strong> Targets are Peru or Brazil, focusing on tree crops and oil palm crops between 2023–2024.</li>
+                    <button onclick="window.open('https://www.collect.earth/', '_blank')">Go to CEO</button>
+                </ul>
+            </section>
+    </main>
     <footer>
         <p>&copy; 2024 | Guide for Agricultural Field Labelling</p>
     </footer>
 </body>
 </html>
+
